@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{asset('css/animations/css/bootstrap.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('css/animations/style.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{asset('css/animations/css/style.css')}}" type="text/css" />
     <link rel="stylesheet" href="{{asset('css/animations/css/dark.css')}}" type="text/css" />
     <link rel="stylesheet" href="{{asset('css/animations/css/font-icons.css')}}" type="text/css" />
     <link rel="stylesheet" href="{{asset('css/animations/css/animate.css')}}" type="text/css" />
@@ -18,8 +18,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
+    @yield('stylesheets')
+
 </head>
-<body>
+<body class="stretched">
 
     <div id="wrapper" class="clearfix">
 
@@ -35,6 +38,8 @@
 <!-- Footer Scripts
 ============================================= -->
 <script src="{{asset('css/animations/js/functions.js')}}"></script>
+
+@yield('footer-scripts')
 
 </body>
 </html>

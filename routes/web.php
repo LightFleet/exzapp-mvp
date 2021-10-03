@@ -22,4 +22,8 @@ Route::get('/mytests', function () {
     return view('tests');
 });
 
+Route::get('/demo-page', function () {
+    return view('demo-page');
+});
+
 Route::resource('/api/test', ApiContoller::class);
